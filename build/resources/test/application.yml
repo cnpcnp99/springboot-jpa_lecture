@@ -1,0 +1,19 @@
+spring:
+#  datasource:
+#    url: jdbc:h2:mem:test # 테스트에서는 기본적으로 스프링 부트가 인메모리로 테스트하게 해줌
+#    username: sa
+#    password:
+#    driver-class-name: org.h2.Driver
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: create-drop # 테스트에서는 기본적으로 create-drop 이 기본임. 테스트 종료 후 바로 drop을 해서 꺠끗하게 만들어줌
+#    properties:
+#      hibernate:
+##        show_sql: true // sys out으로 로그가 찍힘
+#        format_sql: true
+
+logging:
+  level:
+    org.hibernate.SQL: debug # 로거로 로그가 찍힘
+    org.hibernate.type: trace
